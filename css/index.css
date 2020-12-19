@@ -5,26 +5,28 @@
   box-sizing: border-box;
   outline: none;
   font-family: reg;
-  color: #ebebeb;
+  color: #4e4c4c;
 }
 ::root {
-  --o: #fe7e56;
-  --w: #ebebeb;
+  --bla: #4e4c4c;
+  --w: #f9f9f9;
+  --b: #93b8ef;
+  --g: #9de5ad;
 }
 ::selection {
   background: #0c0c0c;
-  color: #ebebeb;
+  color: #f9f9f9;
 }
 a {
-  color: #ebebeb;
+  color: #f9f9f9;
   text-decoration: none;
 }
 body {
-  background: url(../assets/bg.gif);
+  background: #93b8ef2f;
 }
 /* Main --------------------------------------- */
 main {
-  padding: 6vh 4vw;
+  padding: 6vh 7vw;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -34,17 +36,28 @@ nav {
   width: 100%;
   display: flex;
 }
-.navRight,
 .navLeft {
-  flex: 1;
+  width: 30%;
   display: flex;
   align-items: center;
 }
+.navRight {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+.roomName {
+  background: #93b8ef;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1vw;
+}
 .logo {
-  width: 3.6vw;
-  height: 3.6vw;
-  border: 2px #ebebeb solid;
-  border-radius: 10px;
+  width: 3vw;
+  height: 3vw;
+  border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,86 +67,77 @@ nav {
   width: 45%;
   height: 45%;
   border-radius: 50%;
-  background: #ebebeb;
+  background: #f9f9f9;
 }
 .vl {
   width: 2px;
   height: 100%;
-  background: #ebebeb;
+  background: #f9f9f9;
   border-radius: 50px;
   margin: 0 3vw;
 }
 .navLeft h2 {
-  font-size: 2.3vh;
+  font-size: 2vh;
+  color: #f9f9f9;
   height: 90%;
-  padding: 0 3.4vw;
-  border: 2px #ebebeb solid;
+  padding: 0 2vw;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .navRight {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.link {
-  height: 90%;
-  border: #ebebeb 2px solid;
+.navRight h2 {
+  font-size: 1.8vh;
+}
+.nData {
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  padding-left: 1vw;
-}
-.link h2 {
-  white-space: nowrap;
-  width: 80%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 2.3vh;
-}
-.link .copy {
   height: 100%;
-  width: 20%;
-  background: #ebebeb;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-left: 2vw;
-  cursor: pointer;
-  border-radius: 0 7px 7px 0;
+  background: #f9f9f9;
+  border-radius: 5px;
 }
-.fa-clone {
-  color: #fe7e56;
-  font-size: 2.6vh;
+.blue {
+  padding: 0 1vw;
+  background: #93b8ef;
+  height: 100%;
+  display: flex;
+  border-radius: 5px 0 0 5px;
+  color: #f9f9f9;
+  align-items: center;
 }
-.roomID {
-  font-size: 2.3vh;
-  height: 90%;
+.norm {
+  height: 100%;
   display: flex;
   align-items: center;
-  border: 2px #ebebeb solid;
-  padding-left: 1vw;
-  border-radius: 10px;
-  margin-left: 3vw;
-  padding-right: 3vw;
+  padding: 0 1vw;
+  padding-right: 2vw;
 }
-
+.navRight i {
+  font-size: 2.6vh;
+  color: #9de5ad;
+  padding-right: 1vw;
+  cursor: pointer;
+}
 /* Actual Main ----------------------------------------- */
 .main {
   width: 100%;
-  height: 80%;
-  margin-top: 10vh;
+  height: 90%;
+  margin-top: 7vh;
   display: flex;
+  align-items: center;
 }
 .left {
   width: 60%;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding-right: 6vw;
 }
 .right {
@@ -143,14 +147,13 @@ nav {
 .mem {
   height: 3.8vw;
   width: 100%;
-  border: 2px #ebebeb solid;
-  border-radius: 10px;
+  background: #93b8ef;
+  border-radius: 5px 5px 0 0;
   display: flex;
 }
 .memLeft {
   width: 80%;
   height: 100%;
-  border-right: 2px solid #ebebeb;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -165,38 +168,33 @@ nav {
 }
 .mem h2 {
   font-size: 2.3vh;
+  color: #f9f9f9;
 }
 .mem h3 {
   font-family: elight;
   font-size: 1.8vh;
+  color: #f9f9f9;
 }
 .gr {
   width: 100%;
-  height: 85%;
-  border-radius: 10px;
-  border: 2px #ebebeb solid;
+  height: 80%;
+  border-radius: 0 0 5px 5px;
+  background: #f9f9f9;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
   padding: 2vh 0;
   position: relative;
 }
-.grLine {
-  width: 2px;
-  background: #ebebeb;
-  position: absolute;
-  top: 0;
-  left: 80%;
-}
 .unit {
   width: 100%;
   display: flex;
 }
 .gr h3 {
-  margin: 1.4vh 0;
+  margin: 1.1vh 0;
   width: 80%;
   padding-left: 2vw;
-  font-size: 2.1vh;
+  font-size: 2.15vh;
 }
 .grCCont {
   width: 20%;
@@ -209,58 +207,59 @@ nav {
   width: 1.2vw;
   height: 1.2vw;
   border-radius: 50%;
-  border: 2px #ebebeb solid;
+  border: 2px #4e4c4c solid;
 }
 .un {
   background: transparent;
 }
 .ch {
-  background: #ebebeb;
+  background: #9de5ad;
+  border: 2px #9de5ad solid;
 }
 .right {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: 70%;
 }
 .allow {
   height: 3.8vw;
   width: 100%;
-  border: 2px #ebebeb solid;
-  border-radius: 10px;
   display: flex;
 }
 .allow input {
-  width: 70%;
+  width: 75%;
   border: none;
   background: transparent;
   font-size: 2.3vh;
   padding: 0 2vw;
-  color: #ebebeb;
+  color: #4e4c4c;
+  border-radius: 5px 0 0 5px;
+  background: #f9f9f9;
 }
 .allow input::placeholder {
-  color: #ebebeb;
+  color: #4e4c4c9b;
 }
 .allow button {
-  width: 30%;
+  width: 25%;
   border: none;
   border-radius: 0 7px 7px 0;
-  color: #fe7e56;
+  color: #f9f9f9;
+  background: #93b8ef;
   font-size: 2.3vh;
   cursor: pointer;
 }
 .meet {
-  width: 85%;
+  width: 100%;
   height: 30vh;
-  border: 2px #ebebeb solid;
-  border-radius: 10px;
+  background: #f9f9f9;
+  border-radius: 5px;
   display: flex;
 }
-.meetLeft {
-  width: 55%;
-}
+.meetLeft,
 .meetRight {
-  width: 45%;
+  flex: 1;
 }
 .meetRight {
   display: flex;
@@ -283,11 +282,11 @@ nav {
 }
 .btns button {
   border: none;
-  color: #fe7e56;
-  background: #ebebeb;
-  border-radius: 10px;
+  color: #f9f9f9;
+  background: #93b8ef;
+  border-radius: 5px;
   font-size: 2.3vh;
-  padding: 1vh 2vw;
+  padding: 2vh 3vw;
   cursor: pointer;
 }
 .meetLeft {
@@ -299,6 +298,8 @@ nav {
   width: 12.5vw;
   height: 12.5vw;
   position: relative;
+  background: #93b8ef2f;
+  border-radius: 50%;
 }
 .inner {
   position: absolute;
@@ -307,8 +308,7 @@ nav {
   transform: translate(-50%, -50%);
   width: 67%;
   height: 67%;
-  background: #fe7e56;
-  border: 2px #ebebeb solid;
+  background: #f9f9f9;
   border-radius: 50%;
   z-index: 10;
   display: flex;
@@ -319,7 +319,6 @@ nav {
   position: absolute;
   width: 100%;
   height: 100%;
-  /* background: #fe7e56; */
   border-radius: 50%;
   clip: rect(0px, 12.5vw, 12.5vw, 6.25vw);
 }
@@ -328,7 +327,7 @@ nav {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #ebebeb;
+  background: #93b8ef;
   clip: rect(0, 6.25vw, 12.5vw, 0);
 }
 .bLeft .prog {
@@ -352,4 +351,7 @@ nav {
   100% {
     transform: rotate(180deg);
   }
+}
+.num {
+  color: #4e4c4c;
 }
