@@ -1,0 +1,355 @@
+/* Standard -------------------------------------- */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  font-family: reg;
+  color: #ebebeb;
+}
+::root {
+  --o: #fe7e56;
+  --w: #ebebeb;
+}
+::selection {
+  background: #0c0c0c;
+  color: #ebebeb;
+}
+a {
+  color: #ebebeb;
+  text-decoration: none;
+}
+body {
+  background: url(../assets/bg.gif);
+}
+/* Main --------------------------------------- */
+main {
+  padding: 6vh 4vw;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+/* Nav ------------------------------- */
+nav {
+  width: 100%;
+  display: flex;
+}
+.navRight,
+.navLeft {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 3.6vw;
+  height: 3.6vw;
+  border: 2px #ebebeb solid;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.2vh;
+}
+.cirLog {
+  width: 45%;
+  height: 45%;
+  border-radius: 50%;
+  background: #ebebeb;
+}
+.vl {
+  width: 2px;
+  height: 100%;
+  background: #ebebeb;
+  border-radius: 50px;
+  margin: 0 3vw;
+}
+.navLeft h2 {
+  font-size: 2.3vh;
+  height: 90%;
+  padding: 0 3.4vw;
+  border: 2px #ebebeb solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.navRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.link {
+  height: 90%;
+  border: #ebebeb 2px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  padding-left: 1vw;
+}
+.link h2 {
+  white-space: nowrap;
+  width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 2.3vh;
+}
+.link .copy {
+  height: 100%;
+  width: 20%;
+  background: #ebebeb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2vw;
+  cursor: pointer;
+  border-radius: 0 7px 7px 0;
+}
+.fa-clone {
+  color: #fe7e56;
+  font-size: 2.6vh;
+}
+.roomID {
+  font-size: 2.3vh;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  border: 2px #ebebeb solid;
+  padding-left: 1vw;
+  border-radius: 10px;
+  margin-left: 3vw;
+  padding-right: 3vw;
+}
+
+/* Actual Main ----------------------------------------- */
+.main {
+  width: 100%;
+  height: 80%;
+  margin-top: 10vh;
+  display: flex;
+}
+.left {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 6vw;
+}
+.right {
+  width: 40%;
+  height: 100%;
+}
+.mem {
+  height: 3.8vw;
+  width: 100%;
+  border: 2px #ebebeb solid;
+  border-radius: 10px;
+  display: flex;
+}
+.memLeft {
+  width: 80%;
+  height: 100%;
+  border-right: 2px solid #ebebeb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+}
+.memRight {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mem h2 {
+  font-size: 2.3vh;
+}
+.mem h3 {
+  font-family: elight;
+  font-size: 1.8vh;
+}
+.gr {
+  width: 100%;
+  height: 85%;
+  border-radius: 10px;
+  border: 2px #ebebeb solid;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding: 2vh 0;
+  position: relative;
+}
+.grLine {
+  width: 2px;
+  background: #ebebeb;
+  position: absolute;
+  top: 0;
+  left: 80%;
+}
+.unit {
+  width: 100%;
+  display: flex;
+}
+.gr h3 {
+  margin: 1.4vh 0;
+  width: 80%;
+  padding-left: 2vw;
+  font-size: 2.1vh;
+}
+.grCCont {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.grC {
+  width: 1.2vw;
+  height: 1.2vw;
+  border-radius: 50%;
+  border: 2px #ebebeb solid;
+}
+.un {
+  background: transparent;
+}
+.ch {
+  background: #ebebeb;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.allow {
+  height: 3.8vw;
+  width: 100%;
+  border: 2px #ebebeb solid;
+  border-radius: 10px;
+  display: flex;
+}
+.allow input {
+  width: 70%;
+  border: none;
+  background: transparent;
+  font-size: 2.3vh;
+  padding: 0 2vw;
+  color: #ebebeb;
+}
+.allow input::placeholder {
+  color: #ebebeb;
+}
+.allow button {
+  width: 30%;
+  border: none;
+  border-radius: 0 7px 7px 0;
+  color: #fe7e56;
+  font-size: 2.3vh;
+  cursor: pointer;
+}
+.meet {
+  width: 85%;
+  height: 30vh;
+  border: 2px #ebebeb solid;
+  border-radius: 10px;
+  display: flex;
+}
+.meetLeft {
+  width: 55%;
+}
+.meetRight {
+  width: 45%;
+}
+.meetRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.meetRight h2 {
+  font-size: 2.8vh;
+}
+.meetRight h3 {
+  font-size: 2.3vh;
+  font-family: elight;
+}
+.btns {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.btns button {
+  border: none;
+  color: #fe7e56;
+  background: #ebebeb;
+  border-radius: 10px;
+  font-size: 2.3vh;
+  padding: 1vh 2vw;
+  cursor: pointer;
+}
+.meetLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circont {
+  width: 12.5vw;
+  height: 12.5vw;
+  position: relative;
+}
+.inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 67%;
+  height: 67%;
+  background: #fe7e56;
+  border: 2px #ebebeb solid;
+  border-radius: 50%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: #fe7e56; */
+  border-radius: 50%;
+  clip: rect(0px, 12.5vw, 12.5vw, 6.25vw);
+}
+.prog {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #ebebeb;
+  clip: rect(0, 6.25vw, 12.5vw, 0);
+}
+.bLeft .prog {
+  z-index: 1;
+  animation: left 4s linear both;
+}
+@keyframes left {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+.bRight {
+  z-index: 3;
+  transform: rotate(180deg);
+}
+.bRight .prog {
+  animation: right 4s linear both;
+  animation-delay: 4s;
+}
+@keyframes right {
+  100% {
+    transform: rotate(180deg);
+  }
+}
