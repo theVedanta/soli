@@ -242,12 +242,13 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 70%;
+  height: 80%;
 }
 .allow {
   height: 3.8vw;
   width: 100%;
   display: flex;
+  margin-top: 4vh;
 }
 .allow input {
   width: 75%;
