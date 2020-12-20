@@ -27,3 +27,6 @@ for (let link of links) {
         inp.value = inpVal;
     });
 };
+
+let norm = document.querySelector(".norm")
+norm.textContent = `${window.location.href}`;
