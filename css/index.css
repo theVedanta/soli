@@ -24,6 +24,18 @@ a {
 body {
   background: #93b8ef2f;
 }
+::-webkit-scrollbar {
+  width: 0.6vw;
+}
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #93b8ef;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #719ad8;
+}
 /* Main --------------------------------------- */
 main {
   padding: 6vh 7vw;
@@ -152,7 +164,7 @@ nav {
   display: flex;
 }
 .memLeft {
-  width: 80%;
+  width: 75%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -160,7 +172,7 @@ nav {
   padding: 0 2vw;
 }
 .memRight {
-  width: 20%;
+  width: 25%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -190,14 +202,23 @@ nav {
   width: 100%;
   display: flex;
 }
-.gr h3 {
+.gr .std {
   margin: 1.1vh 0;
-  width: 80%;
-  padding-left: 2vw;
-  font-size: 2.15vh;
+  width: 75%;
+  padding: 0 2vw;
+  font-size: 1.8vh;
+  display: flex;
+  justify-content: space-between;
+}
+.std h3 {
+  font-size: 2vh;
+}
+.std h5 {
+  font-family: elight;
+  color: #4e4c4cc2;
 }
 .grCCont {
-  width: 20%;
+  width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,6 +270,25 @@ nav {
   background: #93b8ef;
   font-size: 2.3vh;
   cursor: pointer;
+}
+.alLinks {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.alLink {
+  width: 3vw;
+  height: 3vw;
+  border-radius: 5px;
+  background: #9de5ad;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4vw;
+  margin: 0 1vw;
 }
 .meet {
   width: 100%;
